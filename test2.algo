@@ -1,0 +1,33 @@
+ALGORITHM  text1
+VAR
+  text: STRING
+  t,j,h, k: INTEGER
+   k:=0; 
+BEGIN
+    
+REPEAT
+    Write("saisie text ")
+    Read(text)
+UNTIL (text[length(text)+1]=='.')
+ t= length(text)
+ 
+ FOR j FROM 1 TO length(text)+1 STEP 1  DO
+     IF (text[j]=="a " OR text[j]=='A' OR  text[j]=="e " OR  text[j]=="E "  OR
+      text[j]=="u " OR text[j]=="U" OR text[j]=="y" OR text[j]=="Y" OR text[j]="i" OR text[j]="I") THEN
+        h=h+1
+         
+     END_IF
+     IF(text[j]==" ") THEN
+     k=k+1
+
+     
+ END_FOR
+ Write(h)
+ Write(t)
+ 
+
+
+ 
+
+
+END
